@@ -69,7 +69,7 @@ export default function UserReports() {
         gap="20px"
         mb="20px"
       >
-        <MiniStatistics
+        {/* <MiniStatistics
           startContent={
             <IconBox
               w="56px"
@@ -82,7 +82,7 @@ export default function UserReports() {
           }
           name="Earnings"
           value="350.4"
-        />
+        /> */}
         <MiniStatistics
           startContent={
             <IconBox
@@ -94,8 +94,8 @@ export default function UserReports() {
               }
             />
           }
-          name="Spend this month"
-          value="642.39"
+          name="Inventory left"
+          value="64%"
         />
         <MiniStatistics growth="+23%" name="Sales" value="574.34" />
         <MiniStatistics
@@ -154,10 +154,16 @@ export default function UserReports() {
       </SimpleGrid>
       <SimpleGrid columns={{ base: 1, md: 1, xl: 2 }} gap="20px" mb="20px">
         {/* <CheckTable columnsData={columnsDataCheck} tableData={tableDataCheck} /> */}
+        {/* <CheckTable /> */}
+
         <SimpleGrid columns={{ base: 1, md: 2, xl: 2 }} gap="20px">
           <DailyTraffic />
           <PieCard />
         </SimpleGrid>
+        <img
+          src="https://www.google.com/maps/d/thumbnail?mid=1bxK5-nyT8rDtTGGINjthVFtaTCM&hl=en_US"
+          alt="Map Image"
+        />
       </SimpleGrid>
       <SimpleGrid columns={{ base: 1, md: 1, xl: 2 }} gap="20px" mb="20px">
         <ComplexTable

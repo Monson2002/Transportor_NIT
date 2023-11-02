@@ -128,30 +128,41 @@ export default function NFT(props) {
             mt="25px"
           >
             <Text fontWeight="700" fontSize="sm" color={textColorBid}>
-              Current Bid: {currentbid}
+              Default Bid: {currentbid}
             </Text>
-            <Link
-              href={download}
-              mt={{
-                base: "0px",
-                md: "10px",
-                lg: "0px",
-                xl: "10px",
-                "2xl": "0px",
-              }}
-            >
-              <Button
-                variant="darkBrand"
-                color="white"
-                fontSize="sm"
-                fontWeight="500"
-                borderRadius="70px"
-                px="24px"
-                py="5px"
+            <form>
+              <input
+                type="text"
+                placeholder="Your Bid Amount"
+                style={{
+                  border: "1px solid #ccc",
+                  padding: "10px",
+                  marginRight: "10px",
+                }}
+              />
+              <Link
+                href={download}
+                mt={{
+                  base: "0px",
+                  md: "10px",
+                  lg: "0px",
+                  xl: "10px",
+                  "2xl": "0px",
+                }}
               >
-                Place Bid
-              </Button>
-            </Link>
+                <Button
+                  variant="darkBrand"
+                  color="white"
+                  fontSize="sm"
+                  fontWeight="500"
+                  borderRadius="70px"
+                  px="24px"
+                  py="5px"
+                >
+                  Place Bid
+                </Button>
+              </Link>
+            </form>
           </Flex>
         </Flex>
       </Flex>
