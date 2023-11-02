@@ -43,7 +43,7 @@ const routes = [
     secondary: true,
   },
   {
-    name: "Customer Dashboard:",
+    name: "Distribution Dashboard:",
     layout: "/admin",
     icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
     path: "/data-tables",
